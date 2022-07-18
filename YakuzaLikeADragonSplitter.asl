@@ -117,7 +117,7 @@ split{
 
     // Item splits
     int[] currentItemID = (current.ItemIDs as int[]);
-    if(settings["Item Splits"]){
+    if(settings["item"]){
         for(int i = 0; i < currentItemID.Length; i++){
             //Split on the itemID we are looking for and check if the split already happened and if the setting for that item is checked
             if(vars.itemSplits.Contains(currentItemID[i]) && !vars.completedSplits.Contains(currentItemID[i]) && settings[currentItemID[i].ToString()]){
