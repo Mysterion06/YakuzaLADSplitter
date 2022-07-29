@@ -45,7 +45,7 @@ startup{
         settings.Add("Chapter Splits");
         settings.CurrentDefaultParent = "Chapter Splits";
             for(int i = 1; i <= 15; i++){
-                settings.Add("chapter" + i, true, "Chapter " + i );
+                settings.Add("chapter" + i, false, "Chapter " + i );
             }
             //settings.Add("final", true,"Final Split");
 
