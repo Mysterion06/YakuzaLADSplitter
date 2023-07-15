@@ -99,7 +99,7 @@ start{
 split{
     // Chapter Splits. Adding them to a list to prevent double splits
     for(int i = 1; i < 15; i++){
-        if(current.chapter > old.chapter && old.chapter != 0 && !vars.completedSplits.Contains(current.chapter) && settings["chapter" + i]){
+        if(current.chapter > old.chapter && old.chapter != 0 && !vars.completedSplits.Contains(current.chapter) && settings["chapter" + current.chapter]){
             vars.completedSplits.Add(current.chapter);
             return true;
         }
